@@ -96,7 +96,6 @@
 		} else {
 			alert("Both foods need to be filled In");
 		}
-	}
 
 /***/ })
 /******/ ]);
