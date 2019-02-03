@@ -11,6 +11,7 @@
     <button onclick="myFoods()" id = "myFoods-button">My Foods</button>
     <button onclick="myDiary()" id = "myDiary-button">My Diary</button>
   </div>
+
   <div class = "toggle-content" id = "food-index-page">
       <h2> Add a Food </h2>
       <form>
@@ -21,7 +22,7 @@
         <input type='submit' value='Add' onclick='foodIndex()'> </input>
       </form>
 
-      <div class = "manage-foods">        
+      <div class = "manage-foods">
         Find Foods:
         <input type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
           <div class = "myFoods-grid">
@@ -29,10 +30,15 @@
             </div>
           </table>
       </div>
+  </div>
 
-  </div>
   <div class = "toggle-content" id = "diary-index-page">
+    <table class = "breakfast"> </table>
+    <table class = "lunch"> </table>
+    <table class = "dinner"> </table>
+    <table class = "snack"> </table>
   </div>
+
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
