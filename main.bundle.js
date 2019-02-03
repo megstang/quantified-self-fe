@@ -82,7 +82,7 @@
 	function foodIndex() {
 	  var nameInput = document.getElementById('new-name-input').value;
 	  var caloriesInput = document.getElementById('new-calories-input').value;
-	  fetch('https://fathomless-escarpment-34086.herokuapp.com/api/v1/foods', {
+	  fetch('http://localhost:3000/api/v1/foods', {
 	    method: 'POST',
 	    headers: { 'Content-Type': 'application/json' },
 	    body: JSON.stringify({
