@@ -94,8 +94,16 @@
 				handleResponse(response);
 			});
 		} else {
-			alert("Both fields should be filled In");
+			alert("Both foods need to be filled In");
 		}
+	}
+
+	function deleteFood(foodId) {
+		fetch('http://localhost:3000/api/v1/foods/' + foodId, {
+			method: 'DELETE',
+			headers: { 'Content-Type': 'application/json' }
+		});
+	}
 
 /***/ })
 /******/ ]);
