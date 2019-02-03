@@ -94,7 +94,7 @@
 				handleResponse(response);
 			});
 		} else {
-			alert("Both foods need to be filled In");
+			alert("Both fields should be filled In");
 		}
 
 /***/ })
