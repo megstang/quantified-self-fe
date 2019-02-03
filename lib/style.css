@@ -6,3 +6,16 @@
 .toggle-content.is-visible {
 	display: block;
 }
+
+.display-foods-grid{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: auto;
+	grid-gap: 30px;
+}
+
+#food-item{
+	background-color: blue;
+	padding: 20px;
+	border-radius: 12px;
+}

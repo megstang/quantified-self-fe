@@ -20,6 +20,14 @@
         <br>
         <input type='submit' value='Add' onclick='foodIndex()'> </input>
       </form>
+      <div class = "manage-foods">
+        Find Foods:
+        <input type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
+          <div class = "myFoods-grid">
+            <div class = "display-foods-grid" id = 'food-grid'>
+            </div>
+          </table>
+      </div>
   </div>
   <div class = "toggle-content" id = "diary-index-page">
   </div>
