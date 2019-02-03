@@ -61,9 +61,29 @@
 	function myFoods() {
 	  show(document.getElementById('food-index-page'));
 	  hide(document.getElementById('landing-page'));
+	  getFoodIndex();
 	}
 
 	function myDiary() {}
+
+	function searchFoods() {
+	  var input, filter, table, tr, td, i, txtValue;
+	  input = document.getElementById("searchFoods");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("food-grid");
+	  tr = table.getElementsByTagName("tr");
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[0];
+	    if (td) {
+	      txtValue = td.textContent || td.innerText;
+	      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    }
+	  }
+	};
 
 	function handleResponse(response) {
 	  return response.json().then(function (json) {
@@ -77,22 +97,49 @@
 	    }
 	    return json;
 	  });
-	}
+	};
 
 	function foodIndex() {
 	  var nameInput = document.getElementById('new-name-input').value;
 	  var caloriesInput = document.getElementById('new-calories-input').value;
-	  fetch('http://localhost:3000/api/v1/foods', {
-	    method: 'POST',
-	    headers: { 'Content-Type': 'application/json' },
-	    body: JSON.stringify({
-	      name: nameInput,
-	      calories: caloriesInput
-	    })
+	  if (nameInput && caloriesInput) {
+	    fetch('http://localhost:3000/api/v1/foods', {
+	      method: 'POST',
+	      headers: { 'Content-Type': 'application/json' },
+	      body: JSON.stringify({
+	        name: nameInput,
+	        calories: caloriesInput
+	      })
+	    }).then(function (response) {
+	      handleResponse(response);
+	    });
+	  } else {
+	    alert("Both foods need to be filled In");
+	  }
+	}
+
+	function deleteFood(foodId) {
+	  fetch('http://localhost:3000/api/v1/foods/' + foodId, {
+	    method: 'DELETE',
+	    headers: { 'Content-Type': 'application/json' }
+	  });
+	};
+
+	function getFoodIndex() {
+	  fetch('http://localhost:3000/api/v1/foods').then(function (response) {
+	    return response.json();
 	  }).then(function (response) {
-	    handleResponse(response);
-	  }).then(function (data) {
-	    console.log(data);
+	    displayFoods(response);
+	  });
+	};
+
+	function displayFoods(foodItemsArray) {
+	  var count = 0;
+	  foodItemsArray.forEach(function (element) {
+	    var id = element.id;
+	    var name = element.name;
+	    var calories = element.calories;
+	    $('#food-grid').append('\n\t\t\t<tr id ="food-item" >\n\t\t\t\t<td id="{{\'food-name-\' + ' + name + '}}">' + name.toUpperCase() + '</td>\n\t\t\t\t<td id="{{\'calories-\' + ' + calories + ' }}">' + calories + '</td>\n\t\t\t</tr>\n      ');
 	  });
 	}
 
