@@ -1,3 +1,32 @@
+body {
+background-color: #1B1B3A;
+}
+
+h1 {
+	top: 100px;
+	font-size: 80px;
+	color: #F9FBF2;
+	font-family: "Marker Felt", fantasy;
+}
+
+h1 b{
+	font-size: 80px;
+	color: #D6EAFF;
+	font-family: "Marker Felt", fantasy;
+}
+
+h2 {
+	top: 100px;
+	font-size: 30px;
+	color: #D6EAFF;
+	font-family: "Marker Felt", fantasy;
+}
+
+h2 b{
+	font-size: 30px;
+	color: #F9FBF2;
+	font-family: "Marker Felt", fantasy;
+}
 
 .toggle-content {
 	display: none;
@@ -14,8 +43,31 @@
 	grid-gap: 30px;
 }
 
-#food-item{
-	background-color: pink;
+.add-food{
+	background-color: #54996B;
 	padding: 20px;
 	border-radius: 12px;
+}
+
+#food-item{
+	background-color: #BAFFF3;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+button {
+  background-color: #CC5757;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:enabled:hover {
+  background-color: #FFEDE1;
 }
