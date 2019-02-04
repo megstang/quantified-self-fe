@@ -1,30 +1,30 @@
 body {
-background-color: #1B1B3A;
+background-color: #2A1B3D;
 }
 
 h1 {
-	top: 100px;
+	margin-top: 150px;
 	font-size: 80px;
-	color: #F9FBF2;
+	color: #D83F87;
 	font-family: "Marker Felt", fantasy;
 }
 
 h1 b{
 	font-size: 80px;
-	color: #D6EAFF;
+	color: #8265A7;
 	font-family: "Marker Felt", fantasy;
 }
 
 h2 {
 	top: 100px;
 	font-size: 30px;
-	color: #D6EAFF;
+	color: #D83F87;
 	font-family: "Marker Felt", fantasy;
 }
 
 h2 b{
 	font-size: 30px;
-	color: #F9FBF2;
+	color: #8265A7;
 	font-family: "Marker Felt", fantasy;
 }
 
@@ -44,19 +44,19 @@ h2 b{
 }
 
 .add-food{
-	background-color: #54996B;
+	background-color: #D83F87;
 	padding: 20px;
 	border-radius: 12px;
 }
 
 #food-item{
-	background-color: #BAFFF3;
+	background-color: #8265A7;
 	padding: 20px;
 	border-radius: 12px;
 }
 
 button {
-  background-color: #CC5757;
+  background-color: #44318D;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -69,5 +69,11 @@ button {
 }
 
 button:enabled:hover {
-  background-color: #FFEDE1;
+  background-color: #8265A7;
+}
+
+#add-food-title{
+	font-size: 30px;
+	color: white;
+	font-family: "Marker Felt", fantasy;
 }
