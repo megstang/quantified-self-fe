@@ -28,6 +28,20 @@ h2 b{
 	font-family: "Marker Felt", fantasy;
 }
 
+h3 {
+	font-size: 20px;
+	color: white;
+	margin: 0;
+	font-family: "Marker Felt", fantasy;
+}
+
+h5{
+	font-size: 25px;
+	color: white;
+	margin: 0;
+	font-family: "Marker Felt", fantasy;
+}
+
 .toggle-content {
 	display: none;
 }
@@ -104,7 +118,7 @@ button:enabled:hover {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #D83F87;
   color: white;
 }
 
@@ -123,4 +137,21 @@ button:enabled:hover {
 #minus {
 	padding: 5px;
 	font-size: 30px;
+}
+
+.table-grid{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: auto;
+	grid-gap: 50px;
+}
+
+.table-grid-item{
+	background-color: white;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+.add-button{
+	
 }
