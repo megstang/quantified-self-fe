@@ -6,68 +6,33 @@
   <title>SnackTrack</title>
 </head>
 <body>
+
+  <div class="topnav">
+  <a class="active" onclick="home()">Home</a>
+  <a onclick= "myFoods()">Foods</a>
+  <a onclick="myDiary()">Diary</a>
+  <a onclick="recipies()">Recipes</a>
+  </div>
+
   <div align = "center" class = "toggle-content is-visible" id = "landing-page">
     <h1 align="center">Snack<b>Track</b></h1><br>
     <button onclick="myFoods()" id = "myFoods-button">My Foods</button><br>
     <button onclick="myDiary()" id = "myDiary-button">My Diary</button>
   </div>
-
   <div class = "toggle-content" id = "food-index-page">
     <h2 align="center">Manage<b>Foods</b></h2>
-      Find Foods:
-      <input type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
+      <input align = "center" type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
       <div class = "myFoods-grid">
         <div class = "display-foods-grid" id = 'food-grid'>
-          <div class = "add-food">
-            <h2 align = "center" id = "add-food-title">Add a Food</h2>
-            <form>
-              Name: <input type='text' name='Name' id='new-name-input'> </input>
-              <br>
-              Calories: <input type='text' name='Calories' id='new-calories-input'> </input>
-              <br>
-              <input type='submit' value='Add' onclick='foodIndex()'> </input>
-            </form>
-          </div>
         </div>
       </div>
   </div>
 
   <div class = "toggle-content" id = "diary-index-page">
-
-    <table id = "breakfast">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-      </tr>
-    </table>
-
-    <table id = "lunch">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-      </tr>
-    </table>
-
-    <table id = "dinner">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-      </tr>
-    </table>
-
-    <table id = "snack">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-      </tr>
-    </table>
-
-    <table id = "meal-calorie-totals">
-      <tr>
-        <th>Goal Calories</th>
-        <th>2000</th>
-      </tr>
-    </table>
+    <table id = "breakfast"></table>
+    <table id = "lunch"></table>
+    <table id = "dinner"></table>
+    <table id = "snack"></table>
   </div>
 
     <script

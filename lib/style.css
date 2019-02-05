@@ -55,7 +55,7 @@ h2 b{
 	border-radius: 12px;
 }
 
-#calorie-total{
+#meal-food-item{
 	background-color: #8265A7;
 	padding: 20px;
 	border-radius: 12px;
@@ -82,4 +82,40 @@ button:enabled:hover {
 	font-size: 30px;
 	color: white;
 	font-family: "Marker Felt", fantasy;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#searchFoods{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 1% 34%;
+  display: inline-block;
+	text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	font-size: 20px;
 }
