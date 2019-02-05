@@ -6,6 +6,14 @@
   <title>SnackTrack</title>
 </head>
 <body>
+
+  <div class="topnav">
+  <a class="active" onclick="home()">Home</a>
+  <a onclick= "myFoods()">Foods</a>
+  <a onclick="myDiary()">Diary</a>
+  <a onclick="recipies()">Recipes</a>
+  </div>
+
   <div align = "center" class = "toggle-content is-visible" id = "landing-page">
     <h1 align="center">Snack<b>Track</b></h1><br>
     <button onclick="myFoods()" id = "myFoods-button">My Foods</button><br>
@@ -18,16 +26,6 @@
       <input type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
       <div class = "myFoods-grid">
         <div class = "display-foods-grid" id = 'food-grid'>
-          <div class = "add-food">
-            <h2 align = "center" id = "add-food-title">Add a Food</h2>
-            <form>
-              Name: <input type='text' name='Name' id='new-name-input'> </input>
-              <br>
-              Calories: <input type='text' name='Calories' id='new-calories-input'> </input>
-              <br>
-              <input type='submit' value='Add' onclick='foodIndex()'> </input>
-            </form>
-          </div>
         </div>
       </div>
   </div>
