@@ -8,10 +8,10 @@
 <body>
 
   <div class="topnav">
-  <a class="active" onclick="home()">Home</a>
-  <a onclick= "myFoods()">Foods</a>
-  <a onclick="myDiary()">Diary</a>
-  <a onclick="recipies()">Recipes</a>
+  <a onclick="home()" id = "nav-home">Home</a>
+  <a onclick= "myFoods()"id = "nav-food">Foods</a>
+  <a onclick="myDiary()" id = "nav-diary">Diary</a>
+  <a onclick="recipies()" id = "nav-recipes">Recipes</a>
   </div>
 
   <div align = "center" class = "toggle-content is-visible" id = "landing-page">
@@ -29,10 +29,13 @@
   </div>
 
   <div class = "toggle-content" id = "diary-index-page">
-    <table id = "breakfast"></table>
-    <table id = "lunch"></table>
-    <table id = "dinner"></table>
-    <table id = "snack"></table>
+    <h2 align="center">My<b>Diary</b></h2>
+    <div class = "table-grid">
+      <table class = "table-grid-item" id = "breakfast"></table>
+      <table class = "table-grid-item" id = "lunch"></table>
+      <table class = "table-grid-item" id = "dinner"></table>
+      <table class = "table-grid-item" id = "snack"></table>
+    </div>
   </div>
 
     <script
