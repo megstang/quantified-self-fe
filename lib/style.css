@@ -119,3 +119,8 @@ button:enabled:hover {
   box-sizing: border-box;
 	font-size: 20px;
 }
+
+#minus {
+	padding: 5px; 
+	font-size: 30px;
+}
