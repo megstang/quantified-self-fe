@@ -55,6 +55,12 @@ h2 b{
 	border-radius: 12px;
 }
 
+#calorie-total{
+	background-color: #8265A7;
+	padding: 20px;
+	border-radius: 12px;
+}
+
 button {
   background-color: #44318D;
   border: none;
