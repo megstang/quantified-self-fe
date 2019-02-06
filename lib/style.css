@@ -61,12 +61,14 @@ h5{
 	background-color: #D83F87;
 	padding: 20px;
 	border-radius: 12px;
+	text-align: center
 }
 
 #food-item{
 	background-color: #8265A7;
 	padding: 20px;
 	border-radius: 12px;
+	text-align: center
 }
 
 #meal-food-item{
@@ -150,6 +152,21 @@ button:enabled:hover {
 	background-color: white;
 	padding: 20px;
 	border-radius: 12px;
+}
+
+
+#food-item h2 {
+	font-size: 30px;
+	color: white;
+	margin: 0;
+	font-family: "Marker Felt", fantasy;
+}
+
+#food-item h3 {
+	font-size: 15px;
+	color: white;
+	margin: 0;
+	font-family: "Marker Felt", fantasy;
 }
 
 .recipe-grid{
