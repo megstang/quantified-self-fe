@@ -154,6 +154,12 @@ button:enabled:hover {
 	border-radius: 12px;
 }
 
+#meal-calorie-totals{
+	background-color: white;
+	padding: 20px;
+	border-radius: 12px;
+}
+
 
 #food-item h2 {
 	font-size: 30px;
