@@ -152,6 +152,16 @@ button:enabled:hover {
 	border-radius: 12px;
 }
 
-.add-button{
-	
+.recipe-grid{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: auto;
+	grid-gap: 50px;
+}
+
+.saved-recipe-grid{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: auto;
+	grid-gap: 50px;
 }
