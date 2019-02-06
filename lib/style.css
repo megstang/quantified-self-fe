@@ -188,3 +188,17 @@ button:enabled:hover {
 	grid-template-rows: auto;
 	grid-gap: 50px;
 }
+
+#calories-consumed {
+	background-color: #8265A7;
+	padding: 20px;
+	border-radius: 12px;
+	text-align: center
+}
+
+#calories-consumed {
+	background-color: #8265A7;
+	padding: 20px;
+	border-radius: 12px;
+	text-align: center
+}
