@@ -11,7 +11,7 @@
   <a onclick="home()" id = "nav-home">Home</a>
   <a onclick= "myFoods()"id = "nav-food">Foods</a>
   <a onclick="myDiary()" id = "nav-diary">Diary</a>
-  <a onclick="recipies()" id = "nav-recipes">Recipes</a>
+  <a onclick="recipes()" id = "nav-recipes">Recipes</a>
   </div>
 
   <div align = "center" class = "toggle-content is-visible" id = "landing-page">
@@ -37,11 +37,20 @@
       <table class = "table-grid-item" id = "snack"></table>
     </div>
   </div>
-
+  <div class = "toggle-content" id = "recipe-index-page">
+    <h2 align="center">My<b>Diary</b></h2>
+    <div class = "table-grid">
+      <table class = "table-grid-item" id = "breakfast"></table>
+      <table class = "table-grid-item" id = "lunch"></table>
+      <table class = "table-grid-item" id = "dinner"></table>
+      <table class = "table-grid-item" id = "snack"></table>
+    </div>
+  </div>
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
   <script src="main.bundle.js"></script>
 </body>
+<script src = "/api.js"></script>
 <script src = "lib/index.js" ></script>
 </html>
