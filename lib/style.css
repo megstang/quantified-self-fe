@@ -67,6 +67,7 @@ h5{
 	background-color: #8265A7;
 	padding: 20px;
 	border-radius: 12px;
+	text-align: center
 }
 
 #meal-food-item{
@@ -153,5 +154,5 @@ button:enabled:hover {
 }
 
 .add-button{
-	
+
 }
