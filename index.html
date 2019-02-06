@@ -23,9 +23,9 @@
     <h2 align="center">Manage<b>Foods</b></h2>
       <input align = "center" type="text" id="searchFoods" onkeyup="searchFoods()" placeholder="Search for food.." title="Type in a food">
       <div class = "myFoods-grid">
-        <div class = "display-foods-grid" id = 'food-grid'>
-        </div>
+        <div class = "display-foods-grid" id = 'food-grid'> </div>
       </div>
+    <button onclick="allActiveCheckboxes()"> Find Recipes </button>
   </div>
 
   <div class = "toggle-content" id = "diary-index-page">
@@ -38,13 +38,8 @@
     </div>
   </div>
   <div class = "toggle-content" id = "recipe-index-page">
-    <h2 align="center">My<b>Diary</b></h2>
-    <div class = "table-grid">
-      <table class = "table-grid-item" id = "breakfast"></table>
-      <table class = "table-grid-item" id = "lunch"></table>
-      <table class = "table-grid-item" id = "dinner"></table>
-      <table class = "table-grid-item" id = "snack"></table>
-    </div>
+    <h2 align="center">My<b>Recipes</b></h2>
+    <div class = "recipe-grid"></div>
   </div>
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
