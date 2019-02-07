@@ -46,9 +46,6 @@
 
 	'use strict';
 
-	var apiId = yummly.apiId;
-	var apiKey = yummly.apiKey;
-
 	var show = function show(elem) {
 		elem.classList.add('is-visible');
 	};
@@ -343,7 +340,7 @@
 	}
 
 	function getRecipesApi(search) {
-		fetch('http://api.yummly.com/v1/api/recipes?_app_id=' + apiId + '&_app_key=' + apiKey + '&q=' + search).then(function (response) {
+		fetch('http://api.yummly.com/v1/api/recipes?_app_id=' + yummly.apiId + '&_app_key=' + yummly.apiKey + '&q=' + search).then(function (response) {
 			return response.json();
 		}).then(function (response) {
 			getRecipeInfo(response);
