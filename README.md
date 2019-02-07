@@ -1,73 +1,47 @@
-# Quantified Self Front-end
+# SnackTrack Front End
+https://snack-track.herokuapp.com/
 
-## Initial Setup
+This application is written in javascript and it dogfoods the Snack Track API that we also built in Javascript. 
+You can find the backend here: https://github.com/mstang15/quantified-self-be
 
-1. Clone this starter kit repository and rename the repository to `quantified-self-fe` in one command
+<h1>App Overview</h1>
 
-  ```shell
-  git clone git@github.com:turingschool-examples/qs-fe-starter-kit.git quantified-self-fe
-  ```
-2. Change into the `quantified-self-fe` directory
+When a user visits the app, they see a welcome screen that allows the user to navigate to both the foods index page and the diary page.
+When a user goes to the food index page, they can see all foods that are already in the database. They are able to add more foods with their calories, as well as delete foods that are in the food list. Users can use a dynamic search to find the food that they wish to add to a meal. In order to add a food to a meal, a user can select the meal from a drop down menu and this will automatically add the food to the diary. Users are also able to select the food with a checkbox and then click "Find recipes for selected foods" to find recipes that were pulled using the Yummly API. 
+When a user goes to the diary page, they can see the breakdown of all of their meals, the foods included, and a goals overview for calories set, and calories remaining for that day. Users have the ability to delete foods from the meal tables. 
+When a user visits the Recipe tab, they can see any and all recipes that they have saved while they were using the browser. 
 
-3. Remove the default remote (origin)
+Welcome screen:
 
-  ```shell
-  git remote rm origin
-  ```
+![alt text](readme_images/welcome.png))
+ 
+Food index:
 
-4. Create a new repository on GitHub named `quantified-self-fe`
+![alt text](readme_images/foods.png)
 
-5. Add your new repository remote - **your remote URL and user name will be different in the command below**
+Food Diary:
 
-  ```shell
-  git remote add origin git@github.com:<YOUR GITHUB NAME>/quantified-self-fe.git
-  ```
+![alt text](readme_images/diary.png)
 
-6. Install the dependencies of the starter kit
+<h2>Wireframe</h2>
 
-  ```shell
-  npm install
-  ```
+![alt text](readme_images/landingpage.jpg)
+![alt text](readme_images/fooddiary.jpg)
+![alt text](readme_images/foodindex.jpg)
 
-7. Add, commit, and push up to your repository
+## Set Up
+This app is currently only working locally, so you must also run the backend locally. Visit https://github.com/mstang15/quantified-self-be and follow the following directions: 
+1. git clone <paste repo link for quantified_self backend>
+2. cd quantified_self
+3. npm install 
+4. npm start 
 
-  ```shell
-  git add .
-  git commit -m "Initial commit using starter kit"
-  git push origin master
-  ```
-
-## Running the Server Locally
-
-To see your code in action locally, you need to fire up a development server. Use the command:
-
-```shell
-npm start
-```
-
-Once the server is running, visit in your browser:
-
-* `http://localhost:8080/` to run your application.
-
-You will need to make sure that your Quantified Self API is also running at `http://localhost:3000`
-
-## GitHub Pages Setup
-
-This site will be served from GitHub Pages in production.
-
-In order to see your application running on production:
-
-1. From the command line, run `npm run build`.
-
-2. Commit and push your application to GitHub.
-
-3. Visit your repository on Github
-
-4. Go to Settings
-
-5. Under the Github Pages section of Options, select 'master' as your source and click `Save`
-
-Be sure to `npm run build` and commit before each push to master. A few seconds after you push up, you should be able to see your application at <https://your-github-username.github.io/quantified-self-fe>.
+Now that the backend is running, set up your front end and get it running by following the directions below: 
+1. git clone <paste repo link for quantified-self frontend>
+2. cd quantified-self-fe
+3. npm install
+4. npm run dev
+5. You can visit localhost:8080 to see the app running locally
 
 ## Built With
 
