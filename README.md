@@ -25,9 +25,9 @@ Food Diary:
 
 <h2>Wireframe</h2>
 
-![alt text](readme_images/landingpage.jpg)
-![alt text](readme_images/fooddiary.jpg)
-![alt text](readme_images/foodindex.jpg)
+![alt text](readme_images/landingpage.png)
+![alt text](readme_images/fooddiary.png)
+![alt text](readme_images/foodindex.png)
 
 ## Set Up
 This app is currently only working locally, so you must also run the backend locally. Visit https://github.com/mstang15/quantified-self-be and follow the following directions: 
