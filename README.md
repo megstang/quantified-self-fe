@@ -23,6 +23,15 @@ Food Diary:
 
 ![alt text](readme_images/diary.png)
 
+After selecting cake and cereal (because that might make a great recipe that we've never tried before!), and press the "Find Recipes for Selected Foods" button, the user is redirected to 10 recipes that match their search words:
+
+![alt text](readme_images/recipes.png)
+
+If a user decides to save three recipes, they can click the "Save Recipe" button and then they are able to visit their Recipe tab in the nav bar to see the recipes that they had saved. 
+
+![alt text](readme_images/savedrecipes.png)
+
+
 <h2>Wireframe</h2>
 
 ![alt text](readme_images/landingpage.png)
@@ -35,6 +44,7 @@ This app is currently only working locally, so you must also run the backend loc
 2. cd quantified_self
 3. npm install 
 4. npm start 
+
 
 Now that the backend is running, set up your front end and get it running by following the directions below: 
 1. git clone <paste repo link for quantified-self frontend>
