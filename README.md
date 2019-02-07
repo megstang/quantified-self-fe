@@ -23,11 +23,11 @@ Food Diary:
 
 ![alt text](readme_images/diary.png)
 
-After selecting cake and cereal (because that might make a great recipe that we've never tried before!), and press the "Find Recipes for Selected Foods" button, the user is redirected to 10 recipes that match their search words:
+After selecting cake and cereal (because that might make a great recipe that we've never tried before!), and press the "Find Recipes for Selected Foods" button, the user is redirected to 10 recipes that match their search words. Users are able to click on the picture of the recipe, and then they will be taken to a yummly web page to view it.
 
 ![alt text](readme_images/recipes.png)
 
-If a user decides to save three recipes, they can click the "Save Recipe" button and then they are able to visit their Recipe tab in the nav bar to see the recipes that they had saved. 
+If a user decides to save three recipes, they can click the "Save Recipe" button and then they are able to visit their Recipe tab in the nav bar to see the recipes that they had saved. The picture that displays for the favorites is also a link right to yummly. 
 
 ![alt text](readme_images/savedrecipes.png)
 
