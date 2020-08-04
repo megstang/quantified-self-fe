@@ -1,7 +1,6 @@
 # SnackTrack Front End
-https://snack-track.herokuapp.com/
 
-This application is written in javascript and it dogfoods the Snack Track API that we also built in Javascript. 
+This application is written in javascript and it uses the Snack Track API that was also built in Javascript. 
 You can find the backend here: https://github.com/mstang15/quantified-self-be
 
 <h1>App Overview</h1>
